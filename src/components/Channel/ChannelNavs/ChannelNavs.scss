@@ -1,0 +1,25 @@
+.channel-nav {
+	/* background-color: #fafafa; */
+	padding-bottom: 0.5rem;
+	white-space: nowrap;
+	overflow-x: auto;
+	ul {
+		display: flex;
+		a {
+			display: inline-block;
+			font-size: 1rem;
+			font-weight: 500;
+			text-transform: uppercase;
+			text-decoration: none;
+			color: #aaa;
+			padding: 1.5rem 3.2rem;
+			&.current {
+				color: white;
+				border-bottom: 0.15rem solid #aaa;
+			}
+			&:hover {
+				color: white;
+			}
+		}
+	}
+}

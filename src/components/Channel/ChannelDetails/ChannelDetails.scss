@@ -1,0 +1,79 @@
+.channel-details-container {
+	.channel-banner {
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+		background-size: cover;
+		height: 120px;
+	}
+	.channel-info {
+		margin: 20px 60px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.channel-details {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			.channel-icon {
+				width: 128px;
+				height: 128px;
+
+				img {
+					height: 100%;
+					width: 100%;
+					overflow: hidden;
+					object-fit: cover;
+					border-radius: 50%;
+				}
+			}
+			.channel-title {
+				display: flex;
+				flex-direction: column;
+
+				h1 {
+					font-size: 2.4rem;
+					font-weight: 400;
+					display: flex;
+					align-items: baseline;
+					gap: 10px;
+					svg {
+						font-size: 1.3rem;
+					}
+				}
+				.channel-id-and-subscribers {
+					display: flex;
+					align-items: center;
+					gap: 20px;
+					font-size: 1.2rem;
+					color: #aaa;
+					.channel-subscriber-count {
+						font-weight: 400;
+						line-height: 1.8;
+					}
+				}
+				.channel-desc {
+					color: #aaa;
+				}
+			}
+		}
+		.channel-subscribe-btn {
+			display: none;
+			// display: flex;
+			justify-content: center;
+			height: 3rem;
+			width: 9rem;
+			background-color: white;
+			border-radius: 34px;
+			.subscribe-btn {
+				font-size: 1.2rem;
+				font-weight: 500;
+				color: black;
+				margin-right: 0.4rem;
+			}
+			&:hover {
+				background-color: rgb(201, 201, 201);
+			}
+		}
+	}
+}
